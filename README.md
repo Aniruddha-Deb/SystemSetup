@@ -1,15 +1,15 @@
-> Is this the real life
-> Is this just fantasy
-> Caught in a landslide
-> No escape from reality
-> Open your eyes
-> Look up to the skies and see
-> I'm just a poor boy, I need no sympathy,
-> Because I'm easy come, easy go
-> Little high, little low
-> Anyway the wind blows,
-> Doesn't really matter to me
-> To me..
+> Is this the real life\  
+> Is this just fantasy\  
+> Caught in a landslide\  
+> No escape from reality\  
+> Open your eyes\  
+> Look up to the skies and see\  
+> I'm just a poor boy, I need no sympathy,\  
+> Because I'm easy come, easy go\  
+> Little high, little low\  
+> Anyway the wind blows,\  
+> Doesn't really matter to me\  
+> To me..\  
 
 Well, that was a fun keyboard test!
 
@@ -51,7 +51,7 @@ done it properly :)
 	- Uncheck natural scroll direction (Trackpad->Scroll and Zoom)
 	- Use F1, F2 as function keys (Keyboard)
 	- Don't show input menu in menu bar (Keyboard->Input Sources)
-	- Dark Mode \n
+	- Dark Mode\  
 	![dark side meme](darkside.jpeg)
 	- Change computer name to MacBook-Pro (Sharing)
 
@@ -93,6 +93,7 @@ we'll get to that in a minute.
 	  and https://superuser.com/questions/276840/uninstalling-python-3-on-a-mac. 
 	  Best way to install is to use `brew` (this keeps the python updated) and 
 	  `pyenv`, so first install `brew`.
+
 \</DON'T DO THIS!\>
 
 - XCode Command Line Tools
