@@ -24,6 +24,10 @@ today, with a fresh operating system and a formatted disk. The last time I set
 this machine up, I did a halfhearted job of logging the process. This time, I've
 done it properly :)
 
+This article heavily referenced StackExchange along with Sourabh Bajaj's mac 
+setup guide, found at https://sourabhbajaj.com/mac-setup/ (highly recommend 
+you to give that a read, as that is more polished).
+
 ## The Procedure
 
 - User Settings
@@ -127,10 +131,44 @@ we'll get to that in a minute.
 
 - ZSH
 	- edit `.zprofile` and add `export CLICOLOR=1` for coloured output from commands
-	- add prompt tweaks `PS1='%n@%m %F{blue}%~%f %% '`
+	- add prompt tweaks `PS1='%F{green}%n@%m:%f %F{blue}%~%f %% '`
 
 - iTerm2
 	- Tweak profile; first, create a new profile
 	- Change background color to `333333`, foreground to `dddddd` and other colors
 	  to pastel colours
+
+- Mail
+	- Log in to google
+	- Configure signatures, calendars, mail folders etc
+
+- Projects
+	- This is the meaty part. Start with the blog:
+	  ```bash
+	  git clone --select-branch --branch source https://github.com/Aniruddha-Deb/aniruddha-deb.github.io 
+	  mv aniruddha-deb.github.io blog
+	  cd blog
+	  virtualenv venv
+	  source venv/bin/activate
+	  echo "venv" > .gitignore
+	  pip install -r requirements.txt
+	  ```
+	  There were a few hiccups while doing this, which are documented in the 
+	  blog. The next project (MathNotes) needs TeX, so we'll have to install 
+	  TeX first.
+
+- TeX
+	- Download MacTex for this (It's a 4GB download and a 6.7 GB install, but 
+	  there's no simpler alternative X( )
+	- Once you're done with the download, run the .pkg installer
+
+- Projects Continued
+	- Change directory to Programming and clone the MathNotes repo 
+	```bash
+	git clone https://github.com/Aniruddha-Deb/MathNotes.git
+	```
+	- change into MathNotes directory and run the `setup.sh` script; this will 
+	  create a virtual environment, install the dependencies, clone the `gh-pages` 
+	  branch into the output directory and also run a test make.
+
 
