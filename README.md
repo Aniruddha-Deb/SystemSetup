@@ -125,7 +125,7 @@ we'll get to that in a minute.
 	  and now do `python -V` and `pip -V` to verify that python 3.9.0 is loaded
 
 - Vim
-	- Copy `.vim` and `.vimrc` from previous system
+	- Copy `.vim` and `.vimrc` from the `files` folder in this repo 
 	- check if clipboard copy/paste is enabled: `vim --version | grep clipboard`, 
 	  a + sign appears if clipboard is enabled
 
@@ -171,4 +171,14 @@ we'll get to that in a minute.
 	  create a virtual environment, install the dependencies, clone the `gh-pages` 
 	  branch into the output directory and also run a test make.
 
+- GIMP
+	- De Facto image editor I use. Download, drag and drop
 
+- pdf2svg
+	- Used for converting LaTeX PDF's to SVG's. do `brew install pdf2svg` and 
+	  it's good
+
+- Competitive Programming
+	- Mac uses `clang` instead of `gcc`, so `bits/stdc++.h` cannot be included. 
+	  The workaround is to make the `bits` directory in `/usr/local/include` and 
+	  copy the `stdc++.h` header in `files` to that folder.
