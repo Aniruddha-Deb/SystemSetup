@@ -182,3 +182,17 @@ we'll get to that in a minute.
 	- Mac uses `clang` instead of `gcc`, so `bits/stdc++.h` cannot be included. 
 	  The workaround is to make the `bits` directory in `/usr/local/include` and 
 	  copy the `stdc++.h` header in `files` to that folder.
+
+- Java
+	- Should have done this before, but didn't need Java that much before. 
+	- Download the jdk from Oracle's website. It's a .pkg, so double click and
+	  install
+	- add the following line to .zshrc:
+	```
+	export JAVA_HOME="$(/usr/libexec/java_home)"
+	```
+	- Download and install Eclipse (.dmg file, drag and drop app)
+	- when prompted for setup, create a `.eclipseworkspace` folder in the 
+	  Programming folder, and assign that to eclipse. Note that it won't turn 
+	  up on the file browser, so type the path in.
+
